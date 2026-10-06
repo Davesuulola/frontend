@@ -1,16 +1,23 @@
-
-import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from './pages/signup'
+import Navigation from "./navigation";
+import './App.css'
 
-function App() {
+export default function App() {
+  
   return (
     <BrowserRouter>
-      <Routes>  
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
-  )
+      <div className="flex">
+        <Navigation />
+        <main className="h-screen flex-1 overflow-y-auto p-6">
+          <Routes>
+            <Route path="/" element={< Home />} />
+            <Route path="/login" element={< Login />} />
+            <Route path="/signup" element={< Sign up />} />
+            <Route path="/chat/:id" element={< Chat />} />
+          </Routes>
+        </main>
+      </div>
+    <BrowserRouter>
+  );
 }
-
-export default App
