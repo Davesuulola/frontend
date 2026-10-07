@@ -15,7 +15,10 @@ const onSubmit = async (data) => {
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-start bg-black px-4 py-6 sm:justify-center sm:px-6 sm:py-10">
       <div className="w-full max-w-4xl rounded bg-white p-5 shadow-md sm:p-8">
-        <h2 className="mb-4 text-3xl font-semibold">Sign Up</h2>
+
+<div className="mb-6 text-center">
+          <h2 className="mb-4 text-3xl font-semibold">Sign Up</h2>
+</div>
 
         <form className="signup-form grid grid-cols-1 gap-x-6 gap-y-4 lg:grid-cols-2" onSubmit={handleSubmit(onSubmit)} noValidate>
           
