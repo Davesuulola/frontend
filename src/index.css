@@ -1,2 +1,24 @@
 @import "tailwindcss";
 
+.signup-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.error-message {
+  display: none;
+  margin-top: 0.25rem;
+  color: #dc2626;
+  font-size: 0.875rem;
+}
+
+.signup-input:user-invalid {
+  border-color: #ef4444;
+  outline-color: #fecaca;
+}
+
+.signup-input:user-invalid + .error-message {
+  display: block;
+}
