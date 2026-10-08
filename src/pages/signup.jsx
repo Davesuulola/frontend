@@ -9,6 +9,7 @@ const onSubmit = async (data) => {
     console.log(data);
 
     // Placeholder for the backend request. Remove the delay when the API is connected.
+    //setTimeout is used to simulate a delay in the form submission process, mimicking the time it would take to send data to a backend server and receive a response. This is useful for testing the user experience during form submission.
     await new Promise((resolve) => setTimeout(resolve, 1200));
   };
 
